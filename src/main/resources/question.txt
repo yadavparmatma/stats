@@ -1,0 +1,9 @@
+1: As a user I would like to know how much each player has scored per over
+
+2: As a user, I would like to know how many runs each bowler has allowed per throw
+
+3: As a user I would like to know how the batsman got out (Bowled, LBW, Catch)
+
+4: As a user I would like to know the bowler that got the batsman bowled
+
+5: As a user I would like to know the bowler that got the batsman LBW

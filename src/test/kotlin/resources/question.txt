@@ -1,0 +1,1 @@
+1: As a user I would like to know how much each player has scored
