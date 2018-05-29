@@ -3,32 +3,31 @@ package main.response
 import Data
 import main.constants.ActionConstants
 import main.dto.WicketDetail
-import sun.audio.AudioPlayer.player
 
 class StatHelper {
 
     companion object {
         private val players = Data.getPlayerData()
 
-        fun playerScored() {
+        private fun playerScored() {
             players.forEach { player ->
                 System.out.println("Player: ${player.name} Run scored: ${player.battingDetail?.runScored}")
             }
         }
 
-        fun bowlerRunThrown() {
+        private fun bowlerRunThrown() {
             players.forEach { player ->
                 System.out.println("Player: ${player.name} Run thrown: ${player.bowlingDetail?.runsSpend}")
             }
         }
 
-        fun playerOutDetail() {
+        private fun playerOutDetail() {
             players.forEach { player ->
                 System.out.println("Player: ${player.name} Out: ${player.battingDetail?.outType}")
             }
         }
 
-        fun getBowlerByWhoDid(wicketDetail: WicketDetail) {
+        private fun getBowlerByWhoDid(wicketDetail: WicketDetail) {
             players.forEach { player ->
                 val wickets = player.bowlingDetail!!.wickets
                 wickets?.forEach { wicket ->
